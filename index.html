@@ -2,20 +2,19 @@
 <html>
 
 <head>
-<script  src="https://code.jquery.com/jquery-1.12.4.min.js"  ></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <title>正在跳转</title>
-<script type="text/javascript"> 
- 
-$(function(){ 
-	$("#sp").trigger("click");
- 
-}); 
-</script>
+
 </head>
 <body>
-	<a href="https://sohu.gg/b5XW6vO/" target="_blank"><span id="sp">自动点击</span></a>
+	<a href="https://sohu.gg/b5XW6vO/" target="_blank" id="a1">自动点</a>
+	<script>
+var el=document.getElementById('a1');
+el.target = '_new'; //指定在新窗口打开
+el.click();//触发打开事件
+</script>
  </body>
 </html>
 
